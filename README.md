@@ -1,0 +1,1 @@
+Exercises regarding databases and working on MySQL
