@@ -2,6 +2,8 @@ USE albums_db;
 SHOW Tables;
 DESCRIBE albums;
 SELECT * FROM albums;
+SELECT min(release_date) FROM albums;
+SELECT max(release_date) FROM albums;
 SELECT DISTINCT artist FROM albums;
 /* 3.
 a. How many rows are in the albums table?
@@ -25,10 +27,10 @@ SELECT release_date FROM albums WHERE name = "Sgt. Pepper's Lonely Hearts Club B
 SELECT genre FROM albums WHERE name = 'Nevermind';
 
 /* d. Which albums were released in the 1990s */
-SELECT name FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+SELECT name, release_date FROM albums WHERE release_date BETWEEN 1990 AND 1999;
 
 /* e. Which albums had less than 20 million certified sales */
-SELECT name FROM albums WHERE sales < 20;
+SELECT name, sales FROM albums WHERE sales < 20;
 
-SELECT name FROM albums WHERE genre = 'Rock';
+SELECT name, genre FROM albums WHERE genre = 'Rock';
 /* f. Hard rock and Progressive rock are not shown because the WHERE clause for genre uses the specific string 'Rock' and does not include 'Hard rock' or 'Soft rock' */
