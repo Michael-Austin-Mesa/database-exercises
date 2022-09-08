@@ -50,7 +50,8 @@ WHERE last_name LIKE '%e';
 
 SELECT Count(hire_date)
 FROM employees
-WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31';
+/*WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31';*/
+WHERE hire_date LIKE '199%';
 /* Q8: 135214 employees hired in the 90's. Count function used here since rows returned exceeded 50000. */
 
 SELECT *
@@ -60,7 +61,8 @@ WHERE birth_date LIKE '%-12-25';
 
 SELECT * /* Count(hire_date) */
 FROM employees
-WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31'
+W/*HERE hire_date BETWEEN '1990-01-01' AND '1999-12-31'*/
+WHERE hire_date LIKE '199%'
 AND birth_date LIKE '%-12-25';
 /* Q10: 362 employees hired in the 90s with a birthday on Christmas. */
 
