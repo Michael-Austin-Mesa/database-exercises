@@ -23,7 +23,7 @@ FROM employees
 WHERE last_name LIKE 'E%e'
 ORDER BY emp_no ASC;
 /* Q5: 899 employees returned. First employee is emp_no: 10021, name: Ramzi Erde. 
-Last employee is emp_no: 499648, name: Erde Tadahiro. */
+Last employee is emp_no: 499648, name: Tadahiro Erde. */
 
 SELECT DISTINCT *
 FROM employees
