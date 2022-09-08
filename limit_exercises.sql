@@ -21,7 +21,7 @@ FROM employees
 WHERE hire_date LIKE '199%'
 AND birth_date LIKE '%-12-25'
 ORDER BY hire_date
-LIMIT 5 OFFSET 5;
+LIMIT 5 OFFSET 45;
 /* Q4: OFFSET is related to our page number by 
 going over a page's results (which is determined by LIMIT)
 in multiples of the designated LIMIT. For example,
